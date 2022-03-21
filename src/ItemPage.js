@@ -4,11 +4,11 @@ import "./ItemPage.scss"
 const ItemPage = ({items}) => {
   return(
     <ul className="ItemPage__items">
-      {items.map((item) => {
+      {items.map((item) => 
         <li key={item.id} className="ItemPage__item">
           {item.name}
         </li>
-      })}
+      )}
     </ul>
   )
 }

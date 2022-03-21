@@ -8,7 +8,7 @@ const Content = ({tab}) =>{
     switch(tab) {
       default:
       case 'items':
-        return <span>Items</span>
+        return <ItemPage items={items}/>
       case 'cart':
         return <span>Cart</span>
     }
@@ -25,8 +25,6 @@ const App = () => {
       <main className="App__content">
         <Content tab={activeTab}/>
       </main>
-      
-
     </div>
   )
 }
