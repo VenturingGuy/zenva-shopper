@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './App.scss'
 import Nav from './Nav'
+import ItemPage from './ItemPage'
+import { items } from './static-data'
 
 const Content = ({tab}) =>{
     switch(tab) {
@@ -21,7 +23,7 @@ const App = () => {
         onTabChange={setActiveTab}
       />
       <main className="App__content">
-        <span>Empty</span>
+        <Content tab={activeTab}/>
       </main>
       
 
