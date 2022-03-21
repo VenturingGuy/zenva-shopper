@@ -18,7 +18,7 @@ const App = () => {
     <div className="App">
       <Nav
         activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        onTabChange={setActiveTab}
       />
       <main className="App__content">
         <span>Empty</span>

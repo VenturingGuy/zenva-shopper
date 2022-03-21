@@ -1,12 +1,14 @@
-const Nav = () =>{
+const Nav = (props) => {
+  const {activeTab, onTabChange} = props
+  const itemClass = (tabName) => `App__nav-item ${activeTab === tabName ? "selected" : ""}`
   return(
     <nav className="App__nav">
       <ul>
-        <li className="App__nav-item">
-          <button>Items</button>
+        <li className={itemClass("items")}>
+          <button onClick={() => onTabChange("items")}>Items</button>
         </li>
-        <li className="App__nav-item">
-          <button>Cart</button>
+        <li className={itemClass("cart")}>
+          <button onClick={() => onTabChange("cart")}>Cart</button>
         </li>
       </ul>
     </nav>
