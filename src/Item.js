@@ -14,7 +14,7 @@ const Item = ({item, onAddToCart}) => (
     </div>
     <div className="Item__right">
       <div className="Item__price">
-        {item.price}
+        ${item.price}
       </div>
       <button className="Item__add-to-cart" onClick={onAddToCart}>
         Add to cart
