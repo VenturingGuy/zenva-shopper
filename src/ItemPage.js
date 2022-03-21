@@ -1,12 +1,16 @@
 import PropTypes from "prop-types"
+import Item from "./Item"
 import "./ItemPage.scss"
 
-const ItemPage = ({items}) => {
+const ItemPage = ({items, onAddToCart}) => {
   return(
     <ul className="ItemPage__items">
       {items.map((item) => 
         <li key={item.id} className="ItemPage__item">
-          {item.name}
+          <Item
+            item={item}
+            onAddToCart={() => onAddToCart(item)} 
+          />
         </li>
       )}
     </ul>
