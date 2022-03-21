@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import "/.Item.scss"
+import "./Item.scss"
 
 const Item = ({item, onAddToCart}) => (
   <div className="Item">
@@ -16,7 +16,7 @@ const Item = ({item, onAddToCart}) => (
       <div className="Item__price">
         {item.price}
       </div>
-      <button className="Item__add-to-cart">
+      <button className="Item__add-to-cart" onClick={onAddToCart}>
         Add to cart
       </button>
     </div>
