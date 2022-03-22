@@ -22,8 +22,7 @@ const Item = ({item, children}) => (
 )
 
 Item.propTypes = {
-  item: PropTypes.object.isRequired,
-  onAddToCart: PropTypes.func.isRequired
+  item: PropTypes.object.isRequired
 }
 
 export default Item
