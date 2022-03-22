@@ -12,7 +12,7 @@ const ItemPage = ({items, onAddToCart}) => {
               className="Item__add-to-cart" 
               onClick={() => onAddToCart(item)}
             >
-            Add to Cart
+              Add to Cart
             </button> 
           </Item>
         </li>
