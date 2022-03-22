@@ -6,7 +6,7 @@ const items = [
     price: 329.00
   },
   {
-    id: 0,
+    id: 1,
     name: "Apple iPad Pro",
     description: "Even more expensive than the iPad.",
     price: 729.00

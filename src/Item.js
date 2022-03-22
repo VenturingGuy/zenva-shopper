@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import "./Item.scss"
 
-const Item = ({item, onAddToCart}) => (
+const Item = ({item, children}) => (
   <div className="Item">
     <div className="Item__left">
       <div className="Item__image"/>
@@ -16,9 +16,7 @@ const Item = ({item, onAddToCart}) => (
       <div className="Item__price">
         ${item.price}
       </div>
-      <button className="Item__add-to-cart" onClick={onAddToCart}>
-        Add to cart
-      </button>
+      {children}
     </div>
   </div>
 )
