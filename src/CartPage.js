@@ -15,7 +15,7 @@ const CartPage = ({ items, onAddOne, onRemoveOne }) => {
               >
                 -
               </button>
-              <span className="CartItem__count">{item.count}</span>
+              <span className="CartPage__count">{item.count}</span>
               <button
                 className="CartPage__add-one"
                 onClick={() => onAddOne(item)}

@@ -1,0 +1,26 @@
+.CartPage{
+
+  &__items {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+  &__count {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+  }
+  &__add-one, &__remove-one {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+  }
+  &__add-one {
+    border-left: none;
+  }
+  &__remove-one {
+    border-right: none;
+  }
+}

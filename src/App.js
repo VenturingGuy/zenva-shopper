@@ -49,9 +49,6 @@ const App = () => {
         activeTab={activeTab}
         onTabChange={setActiveTab}
       />
-      <div>
-        {cart.length} items
-      </div>
       <main className="App__content">
         <Content
           tab={activeTab}
