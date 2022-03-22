@@ -15,7 +15,7 @@ const Content = ({tab, onAddToCart}) =>{
 }
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState(false)
+  const [activeTab, setActiveTab] = useState("items")
   const [cart, setCart] = useState([])
 
   const addToCart = (item) => {
